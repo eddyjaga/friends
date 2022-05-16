@@ -2,7 +2,7 @@
 
 <%= render "form", friend: @friend %>
 
-<div>
-  <%= link_to "Show", @friend %> |
-  <%= link_to "Back", friends_path %>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <%= link_to '<i class="bi bi-eye"></i> Show'.html_safe, @friend, class: "btn btn-outline-info" %>
+  <%= link_to '<i class="bi bi-arrow-left"></i> Back'.html_safe, friends_path, class: "btn btn-outline-secondary"  %>
 </div>
