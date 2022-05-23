@@ -6,5 +6,5 @@
   <td><%= friend.twitter %></td>
   <td><%= link_to 'Show', friend_path(friend.id), class: "link-info" %></td>
   <td><%= link_to "Edit", edit_friend_path(friend.id), class: "link-success" %></td>
-  <td><%= button_to "Delete", friend_path(friend.id), method: :delete, class: "btn btn-link btn-custom link-danger" %></td>
+  <td><%= button_to "Delete", friend_path(friend.id), method: :delete, class: "btn btn-link btn-custom link-danger", data: { action: "click->friend#delete" } %></td>
 </tr>
