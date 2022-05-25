@@ -30,7 +30,9 @@
             <% end %>
 
             <div class="pt-1 mb-4 d-grid">
-              <%= form.submit "Login", class: "btn btn-info btn-lg" %>
+              <%= button_tag(:class => "btn btn-warning btn-lg") do %>
+                <i class="bi bi-box-arrow-in-right"></i> Login
+              <% end %>
             </div>
 
             <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>

@@ -31,8 +31,9 @@
 
   <div class="d-block pt-4">
     <%= link_to '<i class="bi bi-arrow-left"></i> Back'.html_safe, :back, class: "btn btn-outline-secondary"  %>
-    <%= form.submit 'Update', class: "btn btn-dark" %>
-    
+    <%= button_tag(:class => "btn btn-success") do %>
+      <i class="bi bi-box-arrow-left"></i> Update
+    <% end %>
   </div>
 <% end %>
 <br/><br/><br/>

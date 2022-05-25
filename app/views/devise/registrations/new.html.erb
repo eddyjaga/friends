@@ -34,7 +34,9 @@
             </div>
 
             <div class="pt-1 mb-4 d-grid">
-              <%= form.submit "Sign up", class: "btn btn-success btn-lg" %>
+              <%= button_tag(:class => "btn btn-success btn-lg") do %>
+                <i class="bi bi-box-arrow-left"></i> Sign up
+              <% end %>
             </div>
 
             <%- if controller_name != 'sessions' %>
